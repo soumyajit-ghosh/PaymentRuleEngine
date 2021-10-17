@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using PaymentRuleEngine.App.Factory;
 using PaymentRuleEngine.App.Models;
 using static PaymentRuleEngine.App.Common.Enums;
 
