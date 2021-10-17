@@ -1,8 +1,6 @@
-using Microsoft.VisualStudio.TestPlatform.Utilities;
 using NUnit.Framework;
 using PaymentRuleEngine.App.Factory;
 using PaymentRuleEngine.App.Models;
-using System;
 using static PaymentRuleEngine.App.Common.Enums;
 
 namespace PaymentRuleEngine.Tests
