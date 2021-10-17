@@ -1,17 +1,19 @@
+using Microsoft.VisualStudio.TestPlatform.Utilities;
 using NUnit.Framework;
 using PaymentRuleEngine.App.Factory;
 using PaymentRuleEngine.App.Models;
+using System;
 using static PaymentRuleEngine.App.Common.Enums;
 
 namespace PaymentRuleEngine.Tests
 {
     public class PaymentClientTest
     {
-        private readonly PaymentFactoryService makePayment;
+        private PaymentFactoryService makePayment;
         [SetUp]
         public void Setup()
         {
-            var makePayment = new PaymentFactoryService();
+             makePayment = new PaymentFactoryService();
         }
 
         [Test]
@@ -19,7 +21,6 @@ namespace PaymentRuleEngine.Tests
         {
             var payment = new Payment() { Type = OrderTypes.Book, Amount = 500};   
             makePayment.PaymentMade(payment);
-
             Assert.Pass();
         }
         [Test]
